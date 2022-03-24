@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+ :root {
+  --primary: rgb(139, 0, 0);
+  --secondary: #3a3a3a;
+  --dark: #000000;
+  --light: #ffffff;
+}
+
+/* reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}

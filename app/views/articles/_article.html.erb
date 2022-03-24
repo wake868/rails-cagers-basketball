@@ -1,27 +1,8 @@
 <div id="<%= dom_id article %>">
-  <p>
-    <strong>Title:</strong>
-    <%= article.title %>
-  </p>
-
-  <p>
-    <strong>Slug:</strong>
-    <%= article.slug %>
-  </p>
-
-  <p>
-    <strong>Rank:</strong>
-    <%= article.rank %>
-  </p>
-
-  <p style="height: 500px;">
-    <strong>Body:</strong>
-    <%= article.body.html_safe %>
-  </p>
-
-  <p>
-    <strong>Blurb:</strong>
-    <%= article.blurb %>
-  </p>
-
+  <div class="article">
+    <h3><%= article.title %></h3>
+    <hr />
+    <p><%= article.blurb %></p>
+    <%= link_to "VIEW", article, class: "button" %>
+  </div>
 </div>

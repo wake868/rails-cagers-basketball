@@ -5,7 +5,6 @@ tasks:
       bundle install
       sudo apt install -y postgresql postgresql-contrib libpq-dev
       rails db:migrate
-      rails db:seed
     command: |
       rails server
 ports:

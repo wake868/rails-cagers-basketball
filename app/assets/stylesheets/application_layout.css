@@ -1,0 +1,68 @@
+body {
+  background: url("banner-court-gs.jpg");
+  /* font-family: "Lato"; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: #3a3a3a;
+}
+
+/* BUTTON STYLES */
+.button {
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 5px;
+  background: var(--primary);
+  color: white;
+  margin: 3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button:hover {
+  opacity: 0.5;
+}
+
+/* DEFAULT LAYOUT STYLES */
+.header-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: white;
+}
+.header-banner img {
+  width: 50px;
+}
+.header-banner a {
+  text-decoration: none;
+}
+.header-banner h1 {
+  color: var(--dark);
+}
+.tagline {
+  display: flex;
+  height: 100px;
+  background: var(--primary);
+  justify-content: center;
+  align-items: center;
+}
+.tagline h3 {
+  color: white;
+  font-size: 1.3em;
+}
+.main-container {
+  margin: 0 auto;
+  max-width: 1366px;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 575px) {
+  .header-banner h1 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 400px) {
+  .header-banner h1 {
+    font-size: 1.15em;
+  }
+}

@@ -7,11 +7,20 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+   <header class="header-banner">
+    <%= image_tag "cagers-logo-sm.png" %>
+    <a href="/"><h1>CAGERS BASKETBALL</h1></a>
+    <%= image_tag "cagers-logo-sm.png" %>
+  </header>
+  <section class="tagline">
+    <h3>The BEST never REST!</h3>
+  </section>
+  <div class="main-container">
     <%= yield %>
+  </div>
   </body>
 </html>
