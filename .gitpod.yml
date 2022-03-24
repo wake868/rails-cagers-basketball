@@ -3,6 +3,7 @@ tasks:
       rvm install 3.0.3 --default
       gem install rails
       bundle install
+      sudo apt install -y postgresql postgresql-contrib libpq-dev
       rails db:migrate
     command: |
       rails server
@@ -16,3 +17,4 @@ vscode:
     - bung87.vscode-gemfile
     - alexcvzz.vscode-sqlite
     - rebornix.ruby
+    - wingrunr21.vscode-ruby
