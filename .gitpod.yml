@@ -2,6 +2,8 @@ tasks:
   - init: |
       rvm install 3.0.3 --default
       gem install rails
+      bundle install
+      rails db:migrate
     command: |
       rails server
 ports:
@@ -10,3 +12,6 @@ ports:
 vscode:
   extensions:
     - bung87.rails
+    - sianglim.slim
+    - bung87.vscode-gemfile
+    - alexcvzz.vscode-sqlite
